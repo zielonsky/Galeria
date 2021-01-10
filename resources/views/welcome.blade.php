@@ -71,7 +71,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Dashboard</a>
                         <a href="{{ url('/onas') }}">O Nas</a>
                     @else
                         <a href="{{ route('login') }}">Zaloguj</a>
@@ -84,6 +84,7 @@
             @endif
 
             <div class="content">
+              <img src="/storage/images/wsb.png" alt="">
                 <div class="title m-b-md">
                     Galeria WSB
                 </div>
