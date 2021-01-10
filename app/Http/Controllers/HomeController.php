@@ -26,9 +26,9 @@ class HomeController extends Controller
         return view('home');
     }
 
-    // About
+    // O nas
 
     public function onas(){
-      return view('onas');
+    return view('onas');
     }
 }

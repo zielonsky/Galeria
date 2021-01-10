@@ -73,6 +73,14 @@
                     @auth
                         <a href="{{ url('/home') }}">Dashboard</a>
                         <a href="{{ url('/onas') }}">O Nas</a>
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                            {{ __('Wyloguj') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
                     @else
                         <a href="{{ route('login') }}">Zaloguj</a>
 
